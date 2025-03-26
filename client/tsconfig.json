@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", //handle JSX
+    "esModuleInterop": true, // for p5 imports
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@shared/*": ["src/shared/*"]
+    }
+  },
+  "include": ["src"],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

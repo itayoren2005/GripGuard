@@ -1,0 +1,153 @@
+.timeline-container {
+  display: flex;
+  height: 90vh;
+  background-color: rgb(17, 48, 82);
+  border-radius: 12px;
+  box-shadow: -30px 30px 60px rgba(17, 48, 82, 0.5);
+  overflow-y: hidden;
+}
+
+.timeline-section {
+  display: flex;
+  width: 34%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.video-section {
+  width: 66%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.video-container video,
+.video-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.long-connector {
+  height: 200px;
+}
+
+.custom-timeline-opposite {
+  flex: 0.2 !important;
+  color: aliceblue;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.MuiTimelineConnector-root {
+  background-color: aliceblue !important;
+}
+
+.incident-report {
+  max-width: 100px;
+  margin-right: 15px;
+}
+
+.selected-dot {
+  background-color: rgb(255, 141, 29) !important;
+  cursor: pointer;
+}
+
+.dot {
+  background-color: aliceblue !important;
+  cursor: pointer;
+}
+
+.report {
+  margin-top: 4px;
+  display: flex;
+}
+.content-wrapper {
+  display: block;
+}
+.alciblue-textfield .MuiInputBase-input {
+  color: aliceblue;
+}
+
+.alciblue-textfield label {
+  color: rgb(255, 141, 29);
+}
+
+.alciblue-textfield label.Mui-focused {
+  color: aliceblue !important;
+}
+
+.alciblue-textfield .MuiInput-underline:before {
+  border-bottom-color: rgb(255, 141, 29) !important;
+}
+
+.alciblue-textfield .MuiInput-underline:after {
+  border-bottom-color: aliceblue;
+}
+.custom-timeline .mac-manu {
+  background-color: rgb(255, 141, 29) !important;
+  color: black;
+  border: 1px solid rgb(255, 141, 29);
+  border-radius: 8px;
+  width: 150px;
+}
+.logo {
+  width: 500px !important;
+  height: 500px !important;
+  margin: 100px !important;
+}
+
+.mac-manu .MuiOutlinedInput-root {
+  border: none;
+}
+.mac-manu .MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+}
+.mac-manu:hover .MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+}
+.mac-manu.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+}
+
+.back-button-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 87%;
+}
+.playbar {
+  padding: 0 100px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 970px) {
+  .timeline-container {
+    flex-direction: column;
+    height: auto;
+    width: 300px;
+    max-width: 300px;
+  }
+
+  .timeline-section,
+  .video-section {
+    width: 100%;
+    padding: 10px;
+  }
+  .logo {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 10px !important;
+  }
+}

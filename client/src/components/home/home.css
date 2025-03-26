@@ -1,0 +1,131 @@
+.home-paper {
+  background-image: url("/landback.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: -30px 30px 60px rgba(17, 48, 82, 0.5);
+  display: flex;
+  flex-direction: row;
+  margin: 5px 35px;
+  min-height: 80vh;
+}
+
+.register-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 75px 50px 75px 50px;
+}
+
+.register {
+  width: 100%;
+  margin-left: 50px;
+}
+
+.land-part {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 75px 10px;
+  padding-right: 30px;
+}
+
+.land {
+  max-width: 40%;
+}
+
+.title {
+  display: flex;
+  justify-content: start;
+  color: aliceblue;
+  margin-bottom: 2px;
+}
+.about {
+  margin-top: 2px;
+  color: aliceblue;
+  text-align: left;
+}
+
+.user-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.textfield input {
+  color: aliceblue;
+}
+
+.textfield label {
+  color: aliceblue !important;
+}
+
+.textfield .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: aliceblue;
+  border-radius: 15px;
+}
+
+.textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: aliceblue;
+}
+
+.form-control .MuiSelect-select {
+  color: aliceblue;
+  display: flex;
+  justify-content: start;
+}
+
+.form-control .MuiSelect-icon {
+  color: aliceblue;
+}
+
+.form-control input {
+  color: aliceblue;
+}
+
+.form-control label {
+  color: aliceblue !important;
+}
+
+.form-control .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: aliceblue;
+  border-radius: 15px;
+}
+
+.form-control
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: aliceblue;
+}
+
+.error {
+  color: red;
+  max-width: 200px;
+  display: block;
+  margin-top: 0px;
+}
+
+@media (max-width: 468px) {
+  .home-paper {
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .register-part,
+  .land-part {
+    margin: 20px;
+  }
+  .register {
+    margin: 10px;
+  }
+
+  .land {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

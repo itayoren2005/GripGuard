@@ -1,0 +1,200 @@
+body {
+  background-image: url("../../../homeback.png");
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.clender-paper {
+  background-color: rgb(17, 48, 82);
+  border-radius: 10px;
+  display: flex;
+}
+.blue-background {
+  flex-grow: 1;
+  background-color: rgb(17, 48, 82);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-col {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.calendar-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+  max-height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ant-picker-calendar {
+  background-color: transparent;
+  width: 100%;
+}
+
+.ant-picker-panel {
+  background-color: rgb(17, 48, 82);
+}
+
+.ant-picker-calendar .ant-picker-cell {
+  color: aliceblue;
+}
+
+.ant-picker-content {
+  background-color: rgb(17, 48, 82);
+}
+
+.ant-picker-date-panel {
+  background-color: rgb(17, 48, 82);
+}
+
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-panel
+  .ant-picker-body
+  th {
+  font-weight: bold;
+  color: aliceblue;
+  text-align: center;
+}
+
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-cell-selected
+  .ant-picker-calendar-date-value,
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-cell-selected:hover
+  .ant-picker-calendar-date-value,
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-cell-selected
+  .ant-picker-calendar-date-today
+  .ant-picker-calendar-date-value,
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-cell-selected:hover
+  .ant-picker-calendar-date-today
+  .ant-picker-calendar-date-value {
+  color: #ed8936 !important;
+}
+
+.ant-picker-calendar .ant-picker-cell-today .ant-picker-cell-inner {
+  color: #ed8936 !important;
+  font-weight: bold;
+}
+
+.ant-picker-calendar .ant-picker-cell-inner {
+  border-radius: 8px;
+  margin: 2px;
+  transition: all 0.3s ease;
+}
+
+.ant-picker-calendar .ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: #ed8936 !important;
+}
+
+.ant-picker-calendar .ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-color: #ed8936;
+  border-radius: 8px;
+}
+
+.ant-picker-calendar
+  .ant-picker-cell-in-view.ant-picker-cell-selected
+  .ant-picker-cell-inner,
+.ant-picker-calendar
+  .ant-picker-cell-in-view.ant-picker-cell-today
+  .ant-picker-cell-inner {
+  background-color: rgba(255, 141, 29, 0.2) !important;
+  border: 2px solid #ed8936;
+  font-weight: bold;
+}
+
+.ant-picker-calendar
+  .ant-picker-cell-in-view.ant-picker-cell-selected
+  .ant-picker-cell-inner::after,
+.ant-picker-calendar
+  .ant-picker-cell-in-view.ant-picker-cell-today
+  .ant-picker-cell-inner::after {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 10px;
+  color: #ed8936;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+.incidents {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.incidents li {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.incident-indicator {
+  width: 100%;
+  height: 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.ant-radio-button-wrapper.css-dev-only-do-not-override-ccdg5a {
+  display: none;
+}
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 85%;
+}
+
+@media (max-width: 768px) {
+  .ant-picker-calendar .ant-picker-calendar-header table th {
+    font-size: 12px;
+  }
+
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .calendar-wrapper {
+    margin-right: 10px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ant-picker-calendar .ant-picker-calendar-header table th {
+    font-size: 10px;
+  }
+
+  .calendar-wrapper {
+    margin-right: 5px;
+  }
+
+  .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date {
+    padding: 4px;
+  }
+}

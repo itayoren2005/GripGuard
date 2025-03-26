@@ -1,0 +1,178 @@
+.contents-panel-container {
+  display: flex;
+  justify-content: center;
+}
+.content-panel {
+  background-color: rgb(17, 48, 82);
+  border-radius: 20px;
+  box-shadow: -30px 30px 60px rgba(17, 48, 82, 0.5);
+  display: flex;
+  padding: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.panel {
+  display: block;
+}
+
+.user-manage-panel {
+  width: 600px;
+  height: 200px;
+}
+.panels {
+  display: flex;
+}
+
+.rifle {
+  display: flex;
+}
+
+.role-manager-icon {
+  color: aliceblue !important;
+}
+
+.role-manager-icon:hover {
+  color: #ed8936 !important;
+  border-color: transparent;
+}
+.role-manager-icon:focus {
+  outline: none;
+  border: none;
+}
+
+.dialog {
+  background-color: rgb(17, 48, 82) !important;
+  color: white !important;
+  border: 2px solid rgb(255, 141, 29) !important;
+}
+
+.dialog-title {
+  color: rgb(255, 141, 29) !important;
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.list-title {
+  font-weight: bold !important;
+  font-size: 1.25rem !important;
+}
+
+.css-ihhumc-MuiTypography-root {
+  color: white !important;
+}
+
+.dialog-content {
+  background-color: rgb(17, 48, 82) !important;
+  color: white !important;
+}
+
+.dialog-list-item {
+  color: white !important;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(96, 115, 144, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(96, 115, 144, 0.3);
+  margin-bottom: 10px;
+}
+
+.user-list-item:last-child {
+  border-bottom: none;
+}
+
+.username-text {
+  flex: 0 0 200px;
+  font-size: 16px;
+  color: white;
+}
+
+.role-select {
+  margin-left: 16px;
+  max-width: 35%;
+  background-color: white !important;
+  border-radius: 10px !important;
+  border-color: transparent !important;
+}
+
+.dialog-actions {
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dialog-button {
+  background-color: rgb(255, 141, 29) !important;
+  color: rgb(17, 48, 82) !important;
+  font-weight: bold !important;
+  border-color: transparent !important;
+}
+
+.menu-item-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(17, 48, 82) !important;
+}
+
+.MuiSelect-select {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.create-rifle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white !important;
+}
+.calender {
+  display: flex;
+}
+.create-button {
+  background-color: rgb(255, 141, 29) !important;
+  color: rgb(17, 48, 82) !important;
+  font-weight: bold !important;
+}
+
+.MuiInputBase-input {
+  color: white !important;
+}
+
+.MuiInputLabel-root {
+  color: white !important;
+}
+.MuiInput-underline:before {
+  border-bottom: 2px solid white !important;
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid white !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid white !important;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 85%;
+}
+
+@media (max-width: 768px) {
+  .contents-panel-container {
+    display: block;
+  }
+  .content-panel {
+    margin-top: 10px;
+  }
+}

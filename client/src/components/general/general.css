@@ -1,0 +1,129 @@
+.orenge-button {
+  background-color: rgb(255, 141, 29);
+  border-radius: 10px;
+  color: aliceblue;
+  width: 98%;
+}
+.orenge-button:hover {
+  background-color: aliceblue;
+  color: rgb(255, 141, 29);
+  border: 2px;
+  border-color: rgb(255, 141, 29);
+}
+.blue-button {
+  background-color: rgba(17, 48, 82, 0);
+  color: rgb(255, 141, 29);
+  width: 98%;
+  border: none;
+  outline: none;
+}
+.blue-button:hover {
+  color: aliceblue;
+  border-color: transparent;
+}
+button.blue-button:focus {
+  outline: none;
+  border: none;
+}
+
+.icon-button {
+  background-color: rgba(17, 48, 82, 0);
+  color: rgb(17, 48, 82);
+  border: none;
+  outline: none;
+  padding: 0px;
+}
+
+.icon-button:hover {
+  background-color: transparent !important;
+  color: rgb(255, 141, 29);
+  border-color: transparent;
+}
+
+button.icon-button:focus {
+  outline: none;
+  border: none;
+}
+
+.icon-bright-button {
+  color: aliceblue !important;
+  border: none;
+  outline: none;
+  padding: 0px;
+  transform: scale(-1);
+  transform: scaleX(-1);
+}
+.help-icon {
+  padding: 15px;
+  background-color: transparent !important;
+  color: rgb(255, 141, 29);
+  border-color: transparent !important;
+  margin-left: 10px;
+}
+.help-icon:focus {
+  outline: none;
+  border: none;
+}
+.icon-bright-button:hover {
+  background-color: transparent !important;
+  color: rgb(255, 141, 29) !important;
+  border-color: transparent;
+}
+
+button.icon-bright-button:focus {
+  outline: none;
+  border: none;
+}
+
+.log-out-button {
+  margin-left: 10px !important;
+  border: none;
+  outline: none;
+}
+button.log-out-button:focus {
+  outline: none;
+  border: none;
+}
+.custom-tooltip {
+  background-color: rgb(255, 141, 29) !important;
+  color: aliceblue !important;
+}
+.block-paper {
+  background-color: rgb(17, 48, 82);
+  border-radius: 20px;
+  box-shadow: -30px 30px 60px rgba(17, 48, 82, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-logo {
+  width: 400px;
+  height: 400px;
+  margin: 100px;
+  margin-bottom: 50px;
+}
+
+.block-title {
+  color: rgb(255, 141, 29);
+}
+.block-body {
+  max-width: 250px;
+}
+
+.MuiSlider-track {
+  background-color: rgb(255, 141, 29) !important;
+}
+
+.MuiSlider-rail {
+  background-color: white !important;
+}
+
+.MuiSlider-thumb {
+  background-color: white !important;
+}
+
+.MuiSlider-valueLabel {
+  background-color: rgb(255, 141, 29) !important;
+  color: white !important;
+}

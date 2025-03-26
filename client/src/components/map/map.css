@@ -1,0 +1,123 @@
+.map-page-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.manage-map {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: rgb(17, 48, 82);
+  border-radius: 20px;
+  box-shadow: -30px 30px 60px rgba(17, 48, 82, 0.5);
+  padding: 20px;
+}
+.top-content {
+  flex: 1;
+}
+.reset-button {
+  display: 1;
+  justify-content: flex-end;
+}
+
+.paper {
+  background-color: rgb(17, 48, 82);
+  border-radius: 20px;
+  box-shadow: -30px 30px 60px rgba(17, 48, 82, 0.5);
+  display: flex;
+  padding: 6px;
+}
+.map-items-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgb(17, 48, 82);
+  border-radius: 8px;
+}
+
+.map-item {
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(17, 48, 82);
+  border-radius: 4px;
+  user-select: none;
+  text-align: center;
+}
+
+.map-item-image {
+  max-width: 50px;
+  max-height: 50px;
+  margin-bottom: 5px;
+}
+
+.map-item:active {
+  cursor: grabbing;
+}
+.solider-accordion {
+  color: aliceblue !important;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 20px !important;
+  position: static !important;
+}
+.solider-accordion:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.triangle-textfield {
+  width: 100%;
+  margin: 8px 0;
+}
+.triangle-textfield .MuiInputLabel-root {
+  transition: all 0.2s ease-in-out;
+  color: aliceblue !important;
+}
+.triangle-textfield .MuiInputBase-input {
+  color: aliceblue !important;
+}
+.triangle-textfield .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.23);
+}
+
+.triangle-textfield
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.triangle-textfield
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(255, 141, 29) !important;
+  border-width: 2px;
+}
+.undo-icon {
+  transform: scaleX(-1);
+  cursor: pointer;
+  color: rgb(255, 141, 29) !important;
+}
+.undo-icon:hover {
+  transform: scaleX(-1.2);
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 468px) {
+  .map-page-wrapper {
+    display: block;
+  }
+  .manage-map {
+    width: 95%;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .top-content {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
